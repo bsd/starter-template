@@ -5,12 +5,17 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: 'standard',
+  extends: [
+    "eslint:recommended",
+    "google"
+  ],
   // required to lint *.vue files
   plugins: [
     'html'
   ],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'no-console': 0
+  },
   globals: {}
 }
